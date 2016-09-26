@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Anthony Paul Crowcroft</title>
+    <meta name="google-site-verification" content="nLayH0ppVcnTipa7tzDaXVWmUkOsAbsvPIrjhZdPCAM" />
 
     <base href="/">
 
