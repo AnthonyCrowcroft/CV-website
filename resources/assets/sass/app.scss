@@ -32,8 +32,7 @@ h1 {
   color: #233342 !important;
   background-color: #FFFFFF;
   font-weight: bold;
-  &:hover,
-  &:focus {
+  &:hover{
     color: #FFFFFF !important;
     background-color: $navbar-default-link-hover-bg;
   }

@@ -7967,7 +7967,7 @@ h1 {
   color: #233342 !important;
   background-color: #FFFFFF;
   font-weight: bold; }
-  .active:hover, .active:focus {
+  .active:hover {
     color: #FFFFFF !important;
     background-color: #485865; }
 
