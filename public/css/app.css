@@ -7964,9 +7964,12 @@ h1 {
     background-color: #485865; }
 
 .active {
-  color: #233342;
+  color: #233342 !important;
   background-color: #FFFFFF;
   font-weight: bold; }
+  .active:hover, .active:focus {
+    color: #FFFFFF !important;
+    background-color: #485865; }
 
 html {
   position: relative;

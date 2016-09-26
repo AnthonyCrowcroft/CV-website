@@ -29,14 +29,14 @@ h1 {
 }
 
 .active {
-  color: #233342;
+  color: #233342 !important;
   background-color: #FFFFFF;
   font-weight: bold;
-  //&:hover,
-  //&:focus {
-  //  color: #FFFFFF;
-  //  background-color: $navbar-default-link-hover-bg;
-  //}
+  &:hover,
+  &:focus {
+    color: #FFFFFF !important;
+    background-color: $navbar-default-link-hover-bg;
+  }
 }
 
 // Footer

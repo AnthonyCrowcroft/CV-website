@@ -31,5 +31,5 @@ angular
         $rootScope.isActive = function(possible) {
             return $location.path() === possible;
         }
-
+        $rootScope.profile = {heading: "Profile", body: "I am a body of text designed to test the google bots"};
     });
