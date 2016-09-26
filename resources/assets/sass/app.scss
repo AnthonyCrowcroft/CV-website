@@ -1,0 +1,84 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Lato:100,200,300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Font Awesome
+@import "node_modules/font-awesome/scss/font-awesome";
+
+
+h1 {
+  letter-spacing: 7px;
+}
+
+
+// Justified Nav Styling
+.nav > li > a {
+  letter-spacing: 5px;
+  color: #C2D2D9;
+  &:hover,
+  &:focus {
+    color: #FFFFFF;
+    background-color: $navbar-default-link-hover-bg;
+  }
+}
+
+.active {
+  color: #233342 !important;
+  background-color: #FFFFFF;
+  font-weight: bold;
+  &:hover,
+  &:focus {
+    color: #FFFFFF !important;
+    background-color: $navbar-default-link-hover-bg;
+  }
+}
+
+// Footer
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 72px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 72px;
+  background-color: #C2D2D9;
+}
+
+.footer-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social {
+  display: inline-block;
+  list-style: none;
+  margin: 9px 15px;
+}
+
+.footer-social > a >i{
+  vertical-align: middle;
+  padding: 10px;
+  width: 54px;
+  border: 2px solid #233342;
+  color: #233342;
+  &:hover,
+  &:focus {
+    background-color:#233342;
+    color: #C2D2D9;
+  }
+}
