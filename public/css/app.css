@@ -7970,6 +7970,9 @@ h1 {
   .active:hover, .active:focus {
     color: #FFFFFF !important;
     background-color: #485865; }
+  .active:active {
+    color: #233342 !important;
+    background-color: #FFFFFF; }
 
 html {
   position: relative;

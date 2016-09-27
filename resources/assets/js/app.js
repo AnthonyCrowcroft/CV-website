@@ -27,9 +27,17 @@ angular
 
         $locationProvider.html5Mode(true);
     })
-    .run(function($rootScope, $location) {
+    .run(function($rootScope, $location, $http) {
         $rootScope.isActive = function(possible) {
             return $location.path() === possible;
-        }
+        };
         $rootScope.profile = {heading: "Profile", body: "I am a body of text designed to test the google bots"};
+        $rootScope.contact = function() {
+            $http.post('/api/contact', {'key' : 'value'})
+                 .then(function(res) {
+                     console.log(res);
+                 }, function(err) {
+                     console.log('broken');
+                 });
+        }
     });
