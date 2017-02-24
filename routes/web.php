@@ -11,7 +11,6 @@
 |
 */
 
-Route::any('{path?}', function()
-{
+Route::any('{path?}', function() {
     return view("index");
 })->where("path", ".+");

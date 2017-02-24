@@ -18,15 +18,35 @@
 </head>
 <body>
     <nav class="nav navbar">
-        <h1 class="text-uppercase text-center">Anthony Paul Crowcroft</h1>
         <div class="container">
-            <ul class="nav nav-justified navbar-default">
-                <li><a ng-class="{ 'active' : isActive('/technology')}" class="text-uppercase" href="/technology">Technology</a></li>
-                <li><a ng-class="{ 'active' : isActive('/education')}" class="text-uppercase" href="/education">Education</a></li>
-                <li><a ng-class="{ 'active' : isActive('/profile')}" class="text-uppercase" href="/profile">Profile</a></li>
-                <li><a ng-class="{ 'active' : isActive('/experience')}" class="text-uppercase" href="/experience">Experience</a></li>
-                <li><a ng-class="{ 'active' : isActive('/contact')}" class="text-uppercase" href="/contact">Contact</a></li>
-            </ul>
+            <div class="row">
+                <img class="nav-image" src="/images/header.png">
+                <h1 class="text-uppercase text-center">Anthony Paul Crowcroft</h1>
+            </div>
+            <div class="row navbar-toggle nav-mobile-bar">
+                <button class="nav-mobile-btn text-uppercase text-spaced" ng-click="navCollapsed = !navCollapsed">
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                    Menu
+                </button>
+                <a class="nav-mobile-btn text-uppercase text-spaced" href="/contact">
+                    Contact
+                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+
+        </div>
+        <div class="collapse navbar-collapse" ng-class="navCollapsed && 'in'">
+            <div class="row nav-container">
+                <ul class="nav nav-justified">
+                    <li><a ng-class="navStyle('/technology')" class="text-uppercase text-spaced" href="/technology">Technology</a></li>
+                    <li><a ng-class="navStyle('/education')" class="text-uppercase text-spaced" href="/education">Education</a></li>
+                    <li><a ng-class="navStyle('/profile')" class="text-uppercase text-spaced" href="/profile">Profile</a></li>
+                    <li><a ng-class="navStyle('/experience')" class="text-uppercase text-spaced" href="/experience">Experience</a></li>
+                    <li><a ng-class="navStyle('/contact')" class="text-uppercase text-spaced hidden-xs" href="/contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
